@@ -31,8 +31,8 @@ async_fifo_top  dut (
 initial wclk = 0;
 initial rclk = 0;
 
-always #5 wclk = ~wclk;
-always #5 rclk = ~rclk;
+always #2 wclk = ~wclk;
+always #1 rclk = ~rclk;
 
 initial
     begin
